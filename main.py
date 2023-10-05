@@ -2,12 +2,12 @@ import pandas as pd
 import numpy as np
 import random
 
-emme_base="Palt_Bil_2017"
-border_links = pd.read_csv("indata/Palt_bil_2017/border_links_Palt_bil_2017.csv", sep="\t").to_dict("records")
-zones_outside = pd.read_csv("indata/Palt_bil_2017/zones_outside_Le.csv", sep="\t")["ID"].tolist()
-nodes_in_Le = pd.read_csv("indata/Palt_bil_2017/nodes_in_Le.csv", sep="\t")["i"].tolist()
-connectors_in_Le =pd.read_csv("indata/Palt_bil_2017/connectors_in_Le.csv", sep=";").to_dict("records")
-zones_in_Le =pd.read_csv("indata/Palt_bil_2017/zones_in_le.csv", sep="\t")["i"].tolist()
+emme_base="Palt_Koll_2017"
+border_links = pd.read_csv("indata/Palt_koll_2017/emme_links_border.csv", sep="\t").to_dict("records")
+zones_outside = pd.read_csv("indata/Palt_koll_2017/zones_outside_Le.csv", sep="\t")["ID"].tolist()
+nodes_in_Le = pd.read_csv("indata/Palt_koll_2017/nodes_Le.csv", sep="\t")["i"].tolist()
+connectors_in_Le =pd.read_csv("indata/Palt_koll_2017/Connectors_Le.csv", sep="\t").to_dict("records")
+zones_in_Le =pd.read_csv("indata/Palt_koll_2017/Zones_Le.csv", sep="\t")["i"].tolist()
 
 links = []
 connectors = []
